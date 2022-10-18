@@ -19,7 +19,7 @@ function App() {
         isMultiSelect={true}
         options={options}
         onChange={setValue}
-        placeholder="asdsad"
+        placeholder="Choose many"
         value={value}
       />
 
@@ -27,7 +27,7 @@ function App() {
         isMultiSelect={false}
         options={options}
         onChange={setValue2}
-        placeholder="asdsad"
+        placeholder="Choose one"
         value={value2}
       />
     </div>
