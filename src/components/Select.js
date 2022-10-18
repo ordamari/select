@@ -30,7 +30,6 @@ export function Select({
 
     function clearInput() {
         if (inputRef) inputRef.current.innerHTML = '';
-        inputRef.current.blur();
         updateFilterOptions('');
     }
 
@@ -44,6 +43,7 @@ export function Select({
             focusInput();
         } else {
             if (option?.id !== value?.id) onChange(option)
+            inputRef.current.blur();
         }
         clearInput();
 
